@@ -1,0 +1,32 @@
+.nbtn {
+    color: #fff;
+    font-size: 16px;
+    background: #dc3545;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+     display: inline-block;
+    box-shadow: 4px 4px #ccc;
+    -webkit-box-shadow: 4px 4px #ccc;
+    -o-box-shadow: 4px 4px #ccc;
+    -moz-box-shadow: 4px 4px #ccc;
+    -ms-box-shadow: 4px 4px #ccc;
+}
+.nbtn.start {
+    color: #fff;
+    font-size: 16px;
+    background: #333;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+     display: inline-block;
+    box-shadow: 4px 4px #ccc;
+    -webkit-box-shadow: 4px 4px #ccc;
+    -o-box-shadow: 4px 4px #ccc;
+    -moz-box-shadow: 4px 4px #ccc;
+    -ms-box-shadow: 4px 4px #ccc;
+}
+.nbtn:hover{
+    background: #333;
+}
+.nbtn.start:hover{
+    background: #dc3545;
+}

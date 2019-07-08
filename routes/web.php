@@ -16,13 +16,14 @@
 Route::get('/', 'MainController@getIndex');
 
 Route::get('about', 'MainController@getAbout');
-Route::get('bundle', 'MainController@getBundle');
-Route::get('top-deals', 'MainController@getTopDeals');
-Route::get('deals', 'MainController@getDeals');
+Route::get('register', 'MainController@getRegister');
+Route::get('register-farmers', 'MainController@getRegisterFarmers');
+Route::get('services', 'MainController@getServices');
 
-Route::get('auctions', 'MainController@getAuctions');
-Route::get('auction', 'MainController@getAuction');
+Route::get('mission', 'MainController@getMission');
+Route::get('contact', 'MainController@getContact');
 
+/**
 Route::get('cart', 'MainController@getCart');
 Route::get('add-to-cart', 'MainController@getAddToCart');
 Route::post('update-cart', 'MainController@postUpdateCart');
@@ -70,7 +71,7 @@ Route::get('invoice', 'MainController@getInvoice');
 
 Route::get('logout', 'LoginController@getLogout');
 
-/***** Admin routes *****/
+/***** Admin routes *****
 Route::get('admin', 'LoginController@getAdminLogin');
 Route::post('admin', 'LoginController@postAdminLogin');
 
@@ -129,3 +130,4 @@ Route::get('cobra-comment', 'AdminController@getComment');
 Route::post('cobra-comment', 'AdminController@postComment');
 
 Route::get('zohoverify/{url}', 'MainController@getZoho');
+**/

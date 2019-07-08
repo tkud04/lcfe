@@ -34,14 +34,9 @@ class MainController extends Controller {
 			$cart = $this->helpers->getCart($user);
 		}
 		
-		$c = $this->helpers->categories;
 		$signals = $this->helpers->signals;
-		$hd = $this->helpers->getHottestDeals();
-		$na = $this->helpers->getNewArrivals();
-		$bs = $this->helpers->getBestSellers();
-		$hc = $this->helpers->getHotCategories();
 		
-    	return view('index',compact(['user','cart','c','signals','hd','na','bs','hc']));
+    	return view('index',compact(['user','cart','signals']));
     }
 
 	/**
@@ -59,9 +54,9 @@ class MainController extends Controller {
 			$user = Auth::user();
 			$cart = $this->helpers->getCart($user);
 		}
-		$c = $this->helpers->categories;
+
 		$signals = $this->helpers->signals;
-    	return view('about',compact(['user','cart', 'c','signals']));
+    	return view('about',compact(['user','cart', 'signals']));
 		//return redirect()->intended('/');
     }	
 
@@ -70,9 +65,9 @@ class MainController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getBundle(Request $request)
+	public function getRegister()
     {
-               $user = null;
+         $user = null;
 		
 		$cart = [];
 		if(Auth::check())
@@ -81,33 +76,19 @@ class MainController extends Controller {
 			$cart = $this->helpers->getCart($user);
 		}
 		
-		$req = $request->all();
-		$category = "";
-		$bundleProducts = [];
-		if(isset($req['q']))
-		{
-			$bundleProducts = $this->helpers->getDeals("bundle",$req['q']);
-			$category = $this->helpers->categories[$req['q']];
-		} 
-        else
-        {
-        	$bundleProducts = $this->helpers->getDeals("bundle");
-        }     
-		$c = $this->helpers->categories;
 		$signals = $this->helpers->signals;
-		$mainClass = "amado_product_area section-padding-100 clearfix";
 		
-    	return view('bundle',compact(['user','cart','bundleProducts','category','c','signals','mainClass']));
-    }
+    	return view('register',compact(['user','cart','signals']));
+    }	
 
 	/**
 	 * Show the application welcome screen to the user.
 	 *
 	 * @return Response
 	 */
-	public function getAuctions(Request $request)
+	public function getRegisterFarmers()
     {
-               $user = null;
+         $user = null;
 		
 		$cart = [];
 		if(Auth::check())
@@ -116,127 +97,74 @@ class MainController extends Controller {
 			$cart = $this->helpers->getCart($user);
 		}
 		
-		$req = $request->all();
-		$category = "";
-		$auctions = [];
-		if(isset($req['q']))
-		{
-			$auctions = $this->helpers->getAuctions($req['q']);
-			$category = $this->helpers->categories[$req['q']];
-		} 
-        else
-        {
-        	$auctions = $this->helpers->getAuctions();
-        }     
-		$c = $this->helpers->categories;
 		$signals = $this->helpers->signals;
-		$mainClass = "amado_product_area section-padding-100 clearfix";
-    	return view('auctions',compact(['user','cart','auctions','category','c','signals','mainClass']));
-    }
-    /**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getAuction(Request $request)
-    {
-               $user = null;
 		
-		$cart = [];
-		if(Auth::check())
-		{
-			$user = Auth::user();
-			$cart = $this->helpers->getCart($user);
-		}
-		
-		$req = $request->all();
-		$category = "";
-		$auction = [];
-		if(isset($req['xf']))
-		{
-			$auction = $this->helpers->getAuction($req['xf']);
-			$category = $this->helpers->categories[$req['q']];
-			
-			$c = $this->helpers->categories;
-		    $signals = $this->helpers->signals;
-		    $mainClass = "amado_product_area section-padding-100 clearfix";
-        	return view('auction',compact(['user','cart','auction','category','c','signals','mainClass']));
-		} 
-        else
-        {
-        	return redirect()->intended('auctions');
-        }     
-		
-    }
-
-	/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getTopDeals(Request $request)
-    {
-               $user = null;
-		
-		$cart = [];
-		if(Auth::check())
-		{
-			$user = Auth::user();
-			$cart = $this->helpers->getCart($user);
-		}
-		
-		$req = $request->all();
-		$category = "";
-		$topDeals = [];
-		
-		if(isset($req['q']))
-		{
-			$topDeals = $this->helpers->getDeals("deal",$req['q']);
-			$category = $this->helpers->categories[$req['q']];
-		} 
-        else
-        {
-        	$topDeals = $this->helpers->getDeals("deal");
-        }     
-		$c = $this->helpers->categories;
-		$signals = $this->helpers->signals;
-		$mainClass = "amado_product_area section-padding-100 clearfix";
-    	return view('top-deals',compact(['user','cart','category','topDeals','c','signals','mainClass']));
-    }	/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getDeals(Request $request)
-    {
-               $user = null;
-		
-		$cart = [];
-		if(Auth::check())
-		{
-			$user = Auth::user();
-			$cart = $this->helpers->getCart($user);
-		}
-		
-		$req = $request->all();
-		$category = "";
-		$deals = [];
-		
-		if(isset($req['q']))
-		{
-			$deals = $this->helpers->getDeals("deal",$req['q']);
-			$category = $this->helpers->categories[$req['q']];
-		} 
-        else
-        {
-        	$deals = $this->helpers->getDeals("deal");
-        }     
-		$c = $this->helpers->categories;
-		$signals = $this->helpers->signals;
-		$mainClass = "amado_product_area section-padding-100 clearfix";
-    	return view('deals',compact(['user','cart','category','deals','c','signals','mainClass']));
+    	return view('register-farmers',compact(['user','cart','signals']));
     }	
 	
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getServices()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		
+    	return view('services',compact(['user','cart','signals']));
+    }
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getMission()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		
+    	return view('mission',compact(['user','cart','signals']));
+    }
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getContact()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		
+    	return view('contact',compact(['user','cart','signals']));
+    }
+
 
 	/**
 	 * Show the application welcome screen to the user.
