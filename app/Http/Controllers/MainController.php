@@ -52,11 +52,13 @@ class MainController extends Controller {
 		if(Auth::check())
 		{
 			$user = Auth::user();
-			$cart = $this->helpers->getCart($user);
+			$cart = $this->helpers->getCart($user);			
 		}
 
 		$signals = $this->helpers->signals;
-    	return view('about',compact(['user','cart', 'signals']));
+		$bios = $this->helpers->bios;
+		$leadership = $this->helpers->leadership;
+    	return view('about',compact(['user','cart','signals','bios','leadership']));
 		//return redirect()->intended('/');
     }	
 
