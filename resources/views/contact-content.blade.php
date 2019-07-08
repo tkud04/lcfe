@@ -6,7 +6,7 @@
 			<div class="col-md-12 contact-grid1 w3-agile-grid ">
 			  <p class="">We'd like to hear from you! Send us a message or contact us via:</p><br>
 			</div>
-			<div class="row col-md-4 col-sm-6 contact-grid1 w3-agile-grid">
+			<div class="row col-md-3 col-sm-6 contact-grid1 w3-agile-grid">
 				<div class="col-3 text-center">
 					<i class="fas fa-envelope-open"></i>
 				</div>
@@ -15,7 +15,7 @@
 					<p><a href="mailto:info@example.com">info@lcfe.ng</a></p>
 				</div>
 			</div>
-			<div class="row col-md-4 col-sm-6 mt-sm-0 mt-4 contact-grid1 w3-agile-grid">
+			<div class="row col-md-3 col-sm-6 mt-sm-0 mt-4 contact-grid1 w3-agile-grid">
 				<div class="col-3 text-center">
 					<i class="fas fa-phone"></i>
 				</div>
@@ -24,13 +24,22 @@
 					<p>+234 812 219 6075</p>
 				</div>
 			</div>
-			<div class="row col-md-4 col-sm-6 mt-md-0 mt-4 contact-grid1 w3-agile-grid">
+			<div class="row col-md-3 col-sm-6 mt-md-0 mt-4 contact-grid1 w3-agile-grid">
 				<div class="col-3 text-center">
 					<i class="fas fa-map-marker"></i>
 				</div>
 				<div class="col-9 p-0">
 					<h4>Location</h4>
 					<p>1st floor, Niger house, UAC building, <br>1-5 Odunlami street, Lagos Island, Lagos.</p>
+				</div>
+			</div>
+			<div class="row col-md-3 col-sm-6 mt-md-0 mt-4 contact-grid1 w3-agile-grid">
+				<div class="col-12 text-center">
+				  <!-- Google Map -->
+                  <div class="google-map">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=uac%20building%20marina%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+                  </div>
+                  <!-- End Google Map -->
 				</div>
 			</div>
 		</div>
@@ -77,25 +86,6 @@
 	</div>
 </section>
 <!-- //send message-->
-
-<!-- map-->
-<section class="contact py-5">
-	<div class="container wow fadeInUp">
-		<div class="row contact-grids w3-agile-grid">
-			<div class="col-md-12 contact-grid1 w3-agile-grid">
-			<!-- Google Map -->
-            <div class="google-map">
-                
-                
-              <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=uac%20building%20marina%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
-            </div>
-            <!-- End Google Map -->
-			</div>
-		</div>
-		
-	</div>
-</section>
-<!-- //map -->
 
 
 
