@@ -6,6 +6,7 @@
 	<div class="container wow fadeInUp">
 		<div class="row contact-grids w3-agile-grid">
 			<div class="col-md-12 contact-grid1 w3-agile-grid">
+			
 			        <!--------- Cookie consent-------------->
         	@include('cookie-consent')
         
