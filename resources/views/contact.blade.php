@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title',"Get Started")
+@section('title',"Contact Us")
 
 @section('banner')
 <?php $bannerTitle = "Contact Us"; ?>
@@ -9,6 +9,6 @@
 @stop
 
 @section('content')
-@include("mission-content")
+@include("contact-content")
 @include("ad")
 @stop
