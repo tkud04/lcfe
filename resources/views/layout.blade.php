@@ -19,7 +19,7 @@
               }
               
              ?> 
-
+              
                  @if($pop != "" && $val != "")
                    @include('session-status',['pop' => $pop, 'val' => $val])
                  @endif
