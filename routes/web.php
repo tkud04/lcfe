@@ -22,3 +22,5 @@ Route::get('services', 'MainController@getServices');
 
 Route::get('mission', 'MainController@getMission');
 Route::get('contact', 'MainController@getContact');
+
+Route::get('stocks', 'MainController@getStocks');
