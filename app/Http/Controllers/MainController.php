@@ -166,6 +166,43 @@ class MainController extends Controller {
 		
     	return view('contact',compact(['user','cart','signals']));
     }
+		/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+    public function postContact(Request $request)
+    {
+		$user = null;
+		
+    	if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+
+        $req = $request->all();
+        #dd($req);
+        
+        $validator = Validator::make($req, [
+                             'name' => 'required',
+                             'email' => 'required|email',
+                             'message' => 'required'
+         ]);
+         
+         if($validator->fails())
+         {
+             $messages = $validator->messages();
+             return redirect()->back()->withInput()->with('errors',$messages);
+             //dd($messages);
+         }
+         
+         else
+         {
+            $this->helpers->sendMessage($req);
+	        session()->flash("contact-status","ok");
+			return redirect()->intended('contact');
+         }        
+    }
 	/**
 	 * Show the application welcome screen to the user.
 	 *
