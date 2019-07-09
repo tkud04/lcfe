@@ -10,19 +10,19 @@
 							<tr>
 							    @foreach($stocks as $s)
 								<?php
-								  $pcc = "caret"; $icc = "#01A9CE";
+								  $pcc = "caret"; $icc = "";
 								  if($s->PercChange >= 0){
-									  $icc = "#00AA00";
+									  $icc = "style='color:#00AA00'";
 									  $pcc = "caret caret1";
 								  }
 								?>
 								<td class="w3_agileits_td demo1_w3_table_trade">
 									<table class="agileits_w3layouts_table">
 										<tr>
-											<td style="color:{{$icc}};text-transform:uppercase;">{{$s->SYMBOL}}</td>
+											<td style="color:#01A9CE;text-transform:uppercase;">{{$s->SYMBOL}}</td>
 										</tr>
 										<tr>
-											<td>{{$s->Value}}<i><span class="{{$pcc}}"></span>({{$s->PercChange}}%)</i></td>
+											<td>{{$s->Value}}<i {{$icc}}><span class="{{$pcc}}"></span>({{$s->PercChange}}%)</i></td>
 										</tr>
 									</table>
 								</td>
