@@ -200,7 +200,8 @@ $subject = $data['subject'];
 		   function getStocks()
 		   {
 			     //Send request to stocks api
-			      $url = "http://nigerianelite.com/api/stocks";
+			     // $url = "http://nigerianelite.com/api/stocks";
+			      $url = "http://www.nse.com.ng/REST/api/statistics/ticker?$filter=TickerType  eq 'EQUITIES'";
 			   
 			
 			     $client = new Client([
