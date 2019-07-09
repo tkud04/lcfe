@@ -1,6 +1,6 @@
 <footer>
 
-	<div class="container-fluid p-5 wow fadeInUp" style="background-color:#e71f33">
+	<div class="container-fluid p-5 wow fadeInDown" style="background-color:#e71f33">
 
 		<div class="row footer-gap">
 

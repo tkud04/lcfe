@@ -55,7 +55,8 @@
 		<div class="row contact-grids w3-agile-grid">
 			<div class="col-md-12 contact-grid1 w3-agile-grid">
 			    <small>We'll respond as quickly as possible</small>
-				<form>
+				<form metho="post" action="{{url('contact')}}">
+					{!! csrf_field() !!}
 				    <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
@@ -66,7 +67,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Email</label>
-                          <input type="text" class="form-control" value="Your email address" required>
+                          <input type="text" class="form-control" name="email" value="Your email address" required>
                         </div>
                       </div>
                     </div>
@@ -74,7 +75,7 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Message</label>
-                          <textarea class="form-control" rows="15" required></textarea>
+                          <textarea class="form-control" name="message" rows="15" required></textarea>
                         </div>
                       </div>
                     </div>

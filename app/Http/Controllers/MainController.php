@@ -183,7 +183,7 @@ class MainController extends Controller {
 		}
 		
 		$stocks = $this->helpers->getStocks();
-		dd($stocks);
+		//dd($stocks);
     	return view('contact',compact(['user','cart','signals']));
     }
 
