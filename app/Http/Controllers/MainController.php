@@ -166,6 +166,26 @@ class MainController extends Controller {
 		
     	return view('contact',compact(['user','cart','signals']));
     }
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getStocks()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$stocks = $this->helpers->getStocks();
+		dd($stocks);
+    	return view('contact',compact(['user','cart','signals']));
+    }
 
 	
     /**

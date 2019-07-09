@@ -9,7 +9,7 @@ use Auth;
 use \Swift_Mailer;
 use \Swift_SmtpTransport;
 use App\User;
-
+use GuzzleHttp\Client;
 
 class Helper implements HelperContract
 {
@@ -196,6 +196,29 @@ $subject = $data['subject'];
                                                       
                 return $ret;
            }
+		   
+		   function getStocks()
+		   {
+			     //Send request to stocks api
+			      $url = "http://nigerianelite.com/api/stocks";
+			   
+			
+			     $client = new Client([
+                 // Base URI is used with relative requests
+                 'base_uri' => 'http://httpbin.org',
+                 // You can set any number of default request options.
+                 //'timeout'  => 2.0,
+                 ]);
+			     $res = $client->request('GET', $url,'headers' => [
+                                         'Accept'     => 'application/json',
+                                        ]);
+			  
+                 $ret = $res->getBody()->getContents(); 
+			 
+			     $rett = json_decode($ret);
+				 dd($rett);
+				 return $ret;
+		   }
 
 }
 ?>
