@@ -1,0 +1,300 @@
+/*-- banner-bottom --*/
+.panel ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.news-item
+{
+    padding:0;
+    margin:0px;
+}
+.agile_panel {
+    border: none;
+    box-shadow: none;
+	margin: 0;
+}
+.agile_panel_body {
+    padding: 0;
+}
+.agileits_w3layouts_table tr td{
+	font-size:1em;
+	color:#212121;
+}
+.agileits_w3layouts_table tr td i{
+	font-style:normal;
+	color:red;
+}
+.agileits_w3layouts_table tr td span {
+    border-top: 7px dashed;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+.wthree_i{
+	color:#00AA00 !important;
+}
+.caret1{
+	transform:rotate(-180deg);
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+}
+table.agileits_w3layouts_table {
+    padding: 10px 30px 0;
+    display: block;
+}
+ul.demo1 {
+    background: #EDEDED;
+}
+a.prev,a.next {
+    color: #212121 !important;
+}
+/*-- //banner-bottom --*/
+/*-- news-original --*/
+.agileinfo_news_original_grids{
+	padding:1em 0;
+	margin:1em 0 0;
+}
+.agileits_newsletter h3{
+	font-size: 1.3em;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 1.5em;
+}
+.agileits_newsletter input[type="email"]{
+	outline: none;
+    padding: 7px 10px;
+    width: 100%;
+    color: #999;
+    font-size: 13px;
+    background: #fff;
+    border: none;
+    margin: .5em 0;
+}
+.agileits_newsletter input[type="submit"]{
+	outline: none;
+    padding: 8px 0;
+    width: 40%;
+    color: #fff;
+    font-size: 14px;
+    background: #ff5000;
+    border: none;
+}
+.agileits_newsletter input[type="submit"]:hover{
+	background:#39bd00;
+}
+.agileinfo_news_original_grids_left {
+    padding-left: 0;
+}
+.agileits_newsletter {
+    background:#337ab7;
+    padding: 1em;
+}
+.agileinfo_news_original_grids_left1,.w3_agile_news_market_left,.w3ls_mutual_funds_grid_right {
+    border-left: 1px dashed #E7E7E7;
+	border-right: 1px dashed #E7E7E7;
+}
+.w3ls_tabs a{
+	text-decoration:none;
+}
+.w3ls_tabs a h3{
+	font-size:1.2em;
+    color:#337ab7;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.agileits_news_chart,.w3layouts_market_movers,.w3_agile_profit_assets,.wthree_performance h3{
+	margin:1em 0;
+}
+.w3l_news_board{
+	padding:0 1em;
+}
+.w3l_news_board h2,.agileinfo_trade_team h5,.w3_single_trade_comments h3,.w3layouts_admin h3,.agile_commodity_videos h3,.w3_equity_market_analysis_chart h3,.w3_equity_market_analysis h3,.w3layouts_site_map_left_grid h3,.agile_ipo_left1 h3,.w3l_commodity_top_news h3,.agileits_commodity_statistics h3,.agileinfo_fund_offers h3,.w3_commodity_prices h3,.w3ls_gauge_chart h3,.agileits_technical_research h3,.w3_agileits_fund_updates h3,.agileits_trending_stocks h3,.w3_agileits_top_losers h3,.w3ls_market_videos h3,.w3l_your_stocks h3,.w3layouts_newsletter h3,.agileinfo_chat h3,.agile_chat h3,.w3layouts_market_movers h3,.wthree_performance h3,.agileinfo_calender h3,.w3layouts_research h3,.agileits_news_flash h3{
+	text-transform: uppercase;
+    font-size: 1em;
+    color: #212121;
+    padding: .5em 1em;
+    background: #EFEFEF;
+    margin-bottom: 1em;
+}
+.w3l_news_board h2 i,.agileinfo_trade_team h5 i,.w3_single_trade_comments h3 i,.w3layouts_admin h3 i,.agile_commodity_videos h3 i,.w3_equity_market_analysis_chart h3 i,.w3_equity_market_analysis h3 i,.agile_ipo_left1 h3 i,.w3l_commodity_top_news h3 i,.agileits_commodity_statistics h3 i,.w3_agileits_fund_updates h3 i,.w3_commodity_prices h3 i,.w3ls_gauge_chart h3 i,.agileits_technical_research h3 i,.agileits_trending_stocks h3 i,.w3_agileits_top_losers h3 i,.w3ls_market_videos h3 i,.w3l_your_stocks h3 i,.w3layouts_newsletter h3 i,.agileinfo_chat h3 i,.agile_chat h3 i,.w3layouts_market_movers h3 i,.wthree_performance h3 i,.agileinfo_calender h3 i,.w3layouts_research h3 i,.agileits_news_flash h3 i{
+	padding-right:1em;
+}
+.w3ls_tabs {
+    margin-bottom: 1em;
+}
+.nav-tabs > li > a {
+    padding: 5px 15px;
+    color: #212121;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #ff5000;
+}
+.w3_tab_list li{
+	margin-bottom:1em;
+	font-size:13px;
+}
+.w3_tab_list li:last-child {
+    margin: 0;
+}
+.w3_tab_list li a{
+	color: #337ab7;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+.w3_tab_list li a:hover{
+	color:#212121;
+}
+.w3_tab_list {
+    padding:1.5em 0 0 1.5em;
+}
+.w3_agile_news_page_list {
+    padding-left: 0 !important;
+}
+.w3_tab_list li span{
+	color:#212121;
+	font-weight:600;
+}
+.w3_tab_grid a{
+	text-decoration:none;
+}
+.w3_tab_grid a h3{
+	font-size: 1em;
+    color: #212121;
+    margin-bottom: .5em;
+    font-weight: 600;
+}
+.w3_tab_grid a h3 i{
+	color:#212121;
+	padding-right:1em;
+}
+.w3_tab_grid p{
+	color:#999;
+	line-height:1.8em;
+}
+.w3_tab_grid {
+    padding: 1.5em 0 0;
+}
+.w3_tab_grid1:nth-child(2) {
+    margin: 1em 0;
+}
+.w3_sensex_left{
+	float:left;
+}
+.w3_sensex_left h4{
+	text-transform: uppercase;
+    font-size: 1em;
+    color:#337ab7;
+}
+ul#myTab1 {
+    margin-bottom: 1em;
+}
+.w3_sensex_right{
+	float:right;
+}
+.w3_sensex_right p{
+	font-size:14px;
+	color:#212121;
+}
+.w3_nifty{
+	margin:1em 0;
+}
+.w3_agile_all_trade tr th {
+    border-bottom: 1px solid #e8eaec;
+    padding: 5px 0px;
+    padding-left: 2px;
+    color: #1f2c33;
+    font-size: 12px;
+}
+.w3_agile_all_trade tr th a {
+    color:#337ab7;
+    text-decoration: none;
+}
+.w3_agile_all_trade tr td {
+    border-bottom: 1px solid #e8eaec;
+    padding: 5px 0px;
+    padding-left: 2px;
+    color: #1f2c33;
+    text-align: right;
+    font-size: 12px;
+}
+.agile_market_para {
+    text-align: right;
+    margin: 1em 0 0;
+	color: #212121;
+}
+.agile_market_para a {
+    color: #337ab7;
+}
+.w3_agileits_gainers ul li{
+	display:inline-block;
+	color:#212121;
+}
+.w3_agileits_gainers ul li a{
+	color:#01A9CE;
+	text-decoration:none;
+}
+.w3_agileits_gainers ul li i{
+	padding:0 1em;
+	font-style: normal;
+}
+.w3_agileits_gainers ul {
+    padding-bottom: .5em;
+}
+.wthree_asia_europe h4{
+	font-size: 14px;
+    color: #212121;
+    border-bottom: 1px solid #e8eaec;
+    line-height: 2;
+}
+.w3_agile_profit_assets{
+	background:#f5f5f5;
+	padding:.5em;
+}
+.w3_agile_profit_assets h3{
+	text-transform: capitalize;
+    font-size: 1em;
+    text-align: center;
+    color: #FF0000;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+}
+.w3_agile_profit_assets_grid {
+    padding: .5em;
+    background: #fff;
+}
+.w3_agile_profit_assets_left{
+	float:left;
+	width:30%;
+}
+.w3_agile_profit_assets_right{
+	float:right;
+	width:65%;
+}
+.w3_agile_profit_assets_right p a{
+	color:#212121;
+	line-height:1.8em;
+	text-decoration:none;
+	font-size: 12px;
+}
+.w3_agile_profit_assets_right ul{
+	margin:.5em 0 0;
+}
+.w3_agile_profit_assets_right ul li{
+	display:block;
+	color:#212121;
+	margin-bottom:.5em;
+	font-size: 12px;
+	text-transform:capitalize;
+}
+.w3_agile_profit_assets_right ul li:last-child{
+	margin:0;
+}
+.w3_agile_profit_assets_right ul li span{
+	color: #FF0000;
+}

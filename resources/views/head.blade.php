@@ -59,7 +59,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
-	<link rel="stylesheet" href="css/main.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="all" /> <!-- Custom-CSS --> 	<link rel="stylesheet" href="css/stocks.css" type="text/css" media="all" /> <!-- Stocks-CSS --> 
 
 	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
 

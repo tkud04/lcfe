@@ -16,6 +16,36 @@
               new WOW().init();
               </script>
 	
+	<!-- Stocks display js code -->
+			<script type="text/javascript">
+			$(function () {
+				$(".demo1").bootstrapNews({
+					newsPerPage: 1,
+					autoplay: true,
+					pauseOnHover:true,
+					direction: 'up',
+					newsTickerInterval: 3000,
+					onToDo: function () {
+						//console.log(this);
+					}
+				});
+				
+				$(".demo2").bootstrapNews({
+					newsPerPage: 3,
+					autoplay: true,
+					pauseOnHover: true,
+					navigation: false,
+					direction: 'up',
+					newsTickerInterval: 2500,
+					onToDo: function () {
+						//console.log(this);
+					}
+				});
+			});
+		</script>
+		<script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+	
 	<!-- Stats-Number-Scroller-Animation-JavaScript -->
 
 		<script src="js/waypoints.min.js"></script> 
@@ -214,8 +244,9 @@
 				});
 			});
 		</script>
-		
-        @yield("scripts")
+
+@yield('scripts')		
+
 </body>
 
 </html>
