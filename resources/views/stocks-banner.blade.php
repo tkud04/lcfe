@@ -10,7 +10,7 @@
 							<tr>
 							    @foreach($stocks as $s)
 								<?php
-								  $pcc = "caret"; $icc = "01A9CE";
+								  $pcc = "caret"; $icc = "#01A9CE";
 								  if($s->PercChange >= 0){
 									  $icc = "#00AA00";
 									  $pcc = "caret caret1";
