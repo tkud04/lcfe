@@ -209,9 +209,7 @@ $subject = $data['subject'];
                  // You can set any number of default request options.
                  //'timeout'  => 2.0,
                  ]);
-			     $res = $client->request('GET', $url,'headers' => [
-                                         'Accept'     => 'application/json',
-                                        ]);
+			     $res = $client->request('GET', $url,'headers' => ['Accept' => 'application/json']);
 			  
                  $ret = $res->getBody()->getContents(); 
 			 
