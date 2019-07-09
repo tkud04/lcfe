@@ -215,8 +215,8 @@ $subject = $data['subject'];
                  $ret = $res->getBody()->getContents(); 
 			 
 			     $rett = json_decode($ret);
-				 dd($rett);
-				 return $ret;
+				 #dd($rett);
+				 return $rett;
 		   }
 
 }

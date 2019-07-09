@@ -35,8 +35,9 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
-		
-    	return view('index',compact(['user','cart','signals']));
+		$stocks = $this->helpers->getStocks();
+		$stockChunks = array_chunk($stocks,5);
+    	return view('index',compact(['user','cart','signals','stockChunks']));
     }
 
 	/**
