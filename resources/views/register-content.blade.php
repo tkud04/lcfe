@@ -12,13 +12,13 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">First Name</label>
-                          <input type="text" class="form-control" placeholder="First name" name="fname" required>
+                          <input type="text" class="form-control" placeholder="First name" id="fname" name="fname" required>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Last Name</label>
-                          <input type="text" class="form-control" placeholder="Last name" name="lname" required>
+                          <input type="text" class="form-control" placeholder="Last name" id="lname" name="lname" required>
                         </div>
                       </div>
                     </div>
@@ -26,7 +26,7 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Address</label>
-                          <input type="text" class="form-control" placeholder="Enter address" name="address" required>
+                          <input type="text" class="form-control" placeholder="Enter address" id="address" name="address" required>
                         </div>
                       </div>
                     </div>
@@ -34,13 +34,13 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">City</label>
-                          <input type="text" class="form-control" placeholder="Enter city" name="city" required>
+                          <input type="text" class="form-control" placeholder="Enter city" id="city" name="city" required>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">State</label>
-                          <select class="w-100" name="state" required>
+                          <select class="w-100" id="state" name="state" required>
                                         <option value="none">Select state</option>
                                         <?php 
                                           foreach($states as $key => $value){
@@ -59,13 +59,13 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Phone Number</label>
-                          <input type="text" class="form-control" placeholder="Your phone number" name="phone" required>
+                          <input type="text" class="form-control" id="phone" placeholder="Your phone number" name="phone" required>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Email Address</label>
-                          <input type="text" class="form-control" name="email" placeholder="Your email address" required>
+                          <input type="text" class="form-control" id="em" name="email" placeholder="Your email address" required>
                         </div>
                       </div>
                     </div>
