@@ -3,6 +3,7 @@
 	<div class="banner-bottom wow fadeInUp">
 		<div class="panel panel-default agile_panel">
 			<div class="panel-body agile_panel_body">
+			   <center>
 				<ul class="demo1">
 				    @foreach($stockChunks as $stocks)
 					<li class="news-item">
@@ -32,6 +33,7 @@
 					</li>
 					@endforeach
 				</ul>
+				</center>
 			</div>
 		<div class="panel-footer"> </div>
 		</div>
