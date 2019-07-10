@@ -277,7 +277,7 @@ $subject = $data['subject'];
               $type = $md['type'];
               $ssa = (isset($md['ssa'])) ? $md['ssa'] : 'off';
               
-              if($ssa == "on") $this->updateShippingDetails($user, $md);
+              /**if($ssa == "on") $this->updateShippingDetails($user, $md);
               $dt = [];
               
               if($type == "register"){
@@ -305,6 +305,7 @@ $subject = $data['subject'];
               #create order
 
               #$this->addOrder($user,$dt);
+			  **/
                 return "ok";
            }
 

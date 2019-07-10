@@ -78,6 +78,7 @@ class PaymentController extends Controller {
         //status, reference, metadata(order-id,items,amount,ssa), type
         if($paymentData['status'] == 'success')
         {
+			$user = null;
         	$stt = $this->helpers->checkout($user,$paymentData,"paystack");
             $request->session()->flash("pay-card-status",$stt);
 			return redirect()->intended($successLocation);
