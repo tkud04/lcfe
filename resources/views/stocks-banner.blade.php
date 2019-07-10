@@ -12,7 +12,7 @@
 								<?php
 								  $pcc = "caret"; $icc = "";
 								  if($s->PercChange >= 0){
-									  $icc = "style='color:#00AA00'";
+									  $icc = "color:#00AA00";
 									  $pcc = "caret caret1";
 								  }
 								?>
@@ -22,7 +22,7 @@
 											<td style="color:#01A9CE;text-transform:uppercase;">{{$s->SYMBOL}}</td>
 										</tr>
 										<tr>
-											<td>{{$s->Value}}<i {{$icc}}><span class="{{$pcc}}"></span>({{$s->PercChange}}%)</i></td>
+											<td>{{$s->Value}}<i style="{{$icc}}"><span class="{{$pcc}}"></span>({{$s->PercChange}}%)</i></td>
 										</tr>
 									</table>
 								</td>
