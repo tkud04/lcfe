@@ -32,10 +32,10 @@ class PaymentController extends Controller {
 		{
 			$user = Auth::user();
 		}
-		else
+		/**else
         {
         	return redirect()->intended('/');
-        }
+        }**/
         
         return Paystack::getAuthorizationUrl()->redirectNow();
     }
