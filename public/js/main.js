@@ -25,20 +25,39 @@
 	
 	$("#pay-card").click(function(e){
 	e.preventDefault();
+	let em = $('#em').val();
+	let fname = $('#fname').val();
+	let lname = $('#lname').val();
+	let address = $('#address').val();
+	let city = $('#city').val();
+	let state = $('#state').val();
+	let phone = $('#phone').val();
+	
+	if(em === "" || fname === "" || lname === "" || address === "" || city === "" || state === "" || phone === ""){
+		if(em === "") alert("Your email address is required");
+		if(fname === "") alert("Your first name is required");
+		if(lname === "") alert("Your last name is required");
+		if(address === "") alert("Your residential address is required");
+		if(city === "") alert("Your city of residence is required");
+		if(state === "") alert("Your state of residence is required");
+		if(phone === "") alert("Your phone number is required");
+    }
+	else{
 	 mc['comment'] = $('#comment').val();
-	 mc['email'] = $('#em').val();
-	 mc['fname'] = $('#fname').val();
-	 mc['lname'] = $('#lname').val();
-	 mc['address'] = $('#address').val();
-	 mc['city'] = $('#city').val();
-	 mc['state'] = $('#state').val();
-	 mc['phone'] = $('#phone').val();
+	 mc['email'] = em;
+	 mc['fname'] = fname;
+	 mc['lname'] = lname;
+	 mc['address'] = address;
+	 mc['city'] = city;
+	 mc['state'] = state;
+	 mc['phone'] = phone;
 	 
-	 $('#pem').val($('#em').val());
+	 $('#pem').val(em);
 	
 	$('#nd').val(JSON.stringify(mc));
 	
 	setPaymentAction("card");
+	}
 });
 
 
