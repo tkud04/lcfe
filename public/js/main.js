@@ -57,6 +57,6 @@ function setPaymentAction(type){
    
    //alert(paymentURL);
 
-   $('#checkout-form').attr('action',paymentURL);
-   $('#checkout-form').submit();
+   $('#register-form').attr('action',paymentURL);
+   $('#register-form').submit();
 }
