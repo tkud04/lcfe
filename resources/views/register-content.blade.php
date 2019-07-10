@@ -69,6 +69,13 @@
                         </div>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                      	<div class="form-group">
+                        	<p class="form-control-plaintext">Powered by <img class="img img-fluid" src="images/ps.jpg"/></p>
+                          </div>
+                      </div>
+                    </div>
 					<input type="hidden" id="card-action" value="{{url('pay')}}">
                             	
                              <script>
