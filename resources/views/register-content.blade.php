@@ -44,7 +44,8 @@
                                         <option value="none">Select state</option>
                                         <?php 
                                           foreach($states as $key => $value){
-                                          	#$selectedText = ($key == $sd['state']) ? "selected='selected'" : "";                                           
+                                          	#$selectedText = ($key == $sd['state']) ? "selected='selected'" : ""; 
+											$selectedText = "";
                                         ?>
                                         <option value="<?=$key?>" <?=$selectedText?> ><?=$value?></option>
                                         <?php 
