@@ -80,8 +80,30 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$states = $this->helpers->states;
 		
-    	return view('register',compact(['user','cart','signals']));
+    	return view('register',compact(['user','cart','signals','states']));
+    }	
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getPaid()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		
+    	return view('paid',compact(['user','cart','signals']));
     }	
 
 	/**

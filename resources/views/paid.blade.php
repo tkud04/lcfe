@@ -10,5 +10,5 @@
 
 @section('content')
 @include("paid-content")
-@include("ad-2")
+@include("ad-5")
 @stop
