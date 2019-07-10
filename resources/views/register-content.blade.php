@@ -6,7 +6,7 @@
 			<div class="col-md-12 contact-grid1 w3-agile-grid">
 				<h4><a href="#">Click here</a> to download the registration form or fill the form below</h4>
 			     <small style="color:red;">All fields are required</small>
-				<form action="{{url('register')}}" method="post">
+				<form id="register-form" method="post">
 				    {!! csrf_field() !!}
 				    <div class="row">
                       <div class="col-md-6">
@@ -40,7 +40,17 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">State</label>
-                          <input type="text" class="form-control" placeholder="State" name="state" required>
+                          <select class="w-100" name="state" required>
+                                        <option value="none">Select state</option>
+                                        <?php 
+                                          foreach($states as $key => $value){
+                                          	#$selectedText = ($key == $sd['state']) ? "selected='selected'" : "";                                           
+                                        ?>
+                                        <option value="<?=$key?>" <?=$selectedText?> ><?=$value?></option>
+                                        <?php 
+                                          }
+                                        ?>
+                                    </select>
                         </div>
                       </div>
                     </div>
@@ -58,7 +68,37 @@
                         </div>
                       </div>
                     </div>
-					<button type="submit" class="nbtn text-capitalize start">Submit</button>
+					<input type="hidden" id="card-action" value="{{url('pay')}}">
+                            	
+                             <script>
+                             	let mc = {
+                             	                'type': 'register',
+                                                 'comment': '',
+                                                 'fname': "",
+                                                 'lname': "",
+                                                 'address': "",
+                                                 'city': "",
+                                                 'state': "",
+                                                 'email': "",
+                                                 'phone': "",
+                                                
+                                                 'ssa': "off"
+                                             };
+                             
+                             </script>
+                            <!-- payment form -->
+							<?php
+                              $total = 50000;							
+							?>
+                            	<input type="hidden" id="pem" name="email" value=""> {{-- required --}}
+                            	<input type="hidden" name="amount" value="{{$total * 100}}"> {{-- required in kobo --}}
+                            	<input type="hidden" name="metadata" id="nd" value="" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
+                            	<input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                           	 <input type="hidden" name="key" value="{{ config('paystack.secretKey') }}"> {{-- required --}}
+                                <input type="hidden" id="meta-comment" value="">  
+                            <!-- End payment form -->
+					
+					<button id="pay-card" type="submit" class="nbtn text-capitalize start">Submit</button>
 				</form>
 			</div>
 		</div>

@@ -218,6 +218,95 @@ $subject = $data['subject'];
 				 #dd($rett);
 				 return $rett;
 		   }
+		   
+		    function checkout($user, $data, $type)
+           {
+               switch($type){
+               	case "kloudpay":
+                 	$ret = $this->payWithKloudPay($user, $data);
+                   break; 
+                   
+                   case "paystack":
+                 	$ret = $this->payWithPayStack($user, $data);
+                   break; 
+              }           
+             
+                return $ret;
+           }
+
+ 		  function payWithKloudPay($user, $data)
+           {                     
+              if(isset($data['ssa']) && $data['ssa'] == "on"){
+               	$this->updateShippingDetails($user, $data);
+              }
+              
+             # dd($data);
+           	$wallet = $this->getWallet($user); 
+               $amount = $data['amount'] / 100;
+               
+               if($wallet['balance'] >= $amount)
+               {
+               	#deduct funds from wallet, create order
+                   //debit the user
+                   $userData = ['email' => $user->email,
+                                     'type' => 'remove',
+                                     'amount' => $amount
+                                    ];
+                   $this->fundWallet($userData);
+                   
+                   #create order
+                   $data['type'] = 'checkout';
+                   $data['total'] = $amount;
+                   $data['user_id'] = $user->id;
+                   $data['transaction-type'] = "paid";
+                   $data['transaction-description'] = "wallet";
+                   $this->addOrder($user,$data);
+                   return "ok";
+               }
+               else
+               {
+               	return "error";
+               }                                      	                         
+           }
+           
+           function payWithPayStack($user, $payStackResponse)
+           { 
+              $md = $payStackResponse['metadata'];
+              $amount = $payStackResponse['amount'] / 100;
+              $ref = $payStackResponse['reference'];
+              $type = $md['type'];
+              $ssa = (isset($md['ssa'])) ? $md['ssa'] : 'off';
+              
+              if($ssa == "on") $this->updateShippingDetails($user, $md);
+              $dt = [];
+              
+              if($type == "register"){
+               	$dt['comment'] = $md['comment'];
+                   $dt['reference'] = $ref;
+                   $dt['transaction-type'] = "paid";
+                   $dt['transaction-description'] = "card";
+              }
+              else if($type == "kloudpay"){
+               	//credit the user
+                   $userData = ['email' => $user->email,
+                                     'type' => 'add',
+                                     'amount' => $amount
+                                    ];
+                   $this->fundWallet($userData);
+                   $dt['transaction-type'] = "deposit";
+                   $dt['transaction-description'] = "";
+              }
+              
+              $dt['user_id'] = $user->id;
+              $dt['total'] = $amount;
+              $dt['type'] = "checkout";
+              
+              #dd($payStackResponse);
+              #create order
+
+              #$this->addOrder($user,$dt);
+                return "ok";
+           }
 
 }
 ?>

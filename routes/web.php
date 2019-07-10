@@ -24,3 +24,9 @@ Route::get('mission', 'MainController@getMission');
 Route::get('contact', 'MainController@getContact');
 
 Route::get('stocks', 'MainController@getStocks');
+
+
+Route::get('payment/callback', 'PaymentController@getPaymentCallback');
+Route::post('pay', 'PaymentController@postRedirectToGateway');
+
+Route::get('paid', 'MainController@getPaid');

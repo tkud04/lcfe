@@ -51,10 +51,10 @@ class PaymentController extends Controller {
 		{
 			$user = Auth::user();
 		}
-		else
+		/**else
         {
         	return redirect()->intended('login?return=dashboard');
-        }
+        }**/
 		
         $paymentDetails = Paystack::getPaymentData();
 
@@ -65,9 +65,9 @@ class PaymentController extends Controller {
         
         switch($paymentData['metadata']['type'])
         {
-        	case 'checkout':
-              $successLocation = "orders";
-             $failureLocation = "checkout";
+        	case 'register':
+              $successLocation = "paid";
+             $failureLocation = "register";
             break; 
             
             case 'kloudpay':
