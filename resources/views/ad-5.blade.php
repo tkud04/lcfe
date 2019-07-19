@@ -2,7 +2,7 @@
 
 	<div class="container py-md-3">
 
-		<div class="quotes-info agile-info-quotes wow tada">
+		<div class="quotes-info agile-info-quotes wow jello">
 
 			<img class="img img-fluid" style="max-width: 50% !important;" data-id="logo" src="images/gallery-4.jpg" alt="Partner with us"><br>
 
