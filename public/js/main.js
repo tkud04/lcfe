@@ -76,8 +76,7 @@ $('#register-download-btn').click(function(e) {
     let data_g = $(this).attr('data-g');
     $(this).attr({
 	download: "account.pdf",
-	href: data_g,
-	target: "_blank"
+	href: data_g
 	});
 	
 	$(this).click();

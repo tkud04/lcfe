@@ -6,7 +6,7 @@
 			<div id="register-online" class="col-md-12 contact-grid1 w3-agile-grid">
 			  <div class="row">
 			  <div class="col-md-6">
-			    <a id="register-download-btn" href="#" data-g='download/account.pdf'>Click to download registration form</a><br>
+			    <a id="register-download-btn" href="#" data-g='download/account.pdf' target="_blank">Click to download registration form</a><br>
 				<p>Download the form, fill with your details and submit to our head quarters. Please see below for address.</p>
 			  </div>
 			  <div class="col-md-6">
