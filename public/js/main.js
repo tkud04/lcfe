@@ -72,7 +72,14 @@
 
 $('#register-download-btn').click(function(e) {
     e.preventDefault(); 
-    window.location.href = $(this).attr('data-g');
+	
+    let data_g = $(this).attr('data-g');
+    $(this).attr({
+	download: "account.pdf",
+	href: data_g
+	});
+	
+	$(this).click();
 });
 
 
