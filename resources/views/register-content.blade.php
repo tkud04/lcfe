@@ -1,10 +1,20 @@
 <!-- send message-->
 <section class="contact py-5">
 	<div class="container wow fadeInUp">
-		<h2 class="heading mb-lg-5 mb-4">Register</h2>
+		<h2 class="heading mb-lg-5 mb-4">Open an account with us, it's super EASY</h2>
 		<div class="row contact-grids w3-agile-grid">
-			<div class="col-md-12 contact-grid1 w3-agile-grid">
-				<h4><a href="#">Click here</a> to download the registration form or fill the form below</h4>
+			<div id="register-online" class="col-md-12 contact-grid1 w3-agile-grid">
+			  <div class="col-md-6">
+			    <a href="{{url('drf')}}">Click to download registration form</a><br>
+				<p>Download the form, fill with your details and submit to our head office.</p>
+			  </div>
+			  <div class="col-md-6">
+			    <button id="register-pay-btn">Register online</button><br>
+				<p>Fill your details and proceed to payment.</p>
+			  </div>
+			</div>
+			<div id="register-online-1" class="col-md-12 contact-grid1 w3-agile-grid">
+				<h4>Fill</h4>
 			     <small style="color:red;">All fields are required</small>
 				<form id="register-form" method="post">
 				    {!! csrf_field() !!}

@@ -2,7 +2,7 @@
 
 	<div class="container py-md-3">
 
-		<div class="quotes-info agile-info-quotes wow heartBeat">
+		<div class="quotes-info agile-info-quotes wow jello">
 
 			<img class="img img-fluid" style="max-width: 50% !important;" data-id="logo" src="images/cta-2.png" alt="Trade with us"><br>
 

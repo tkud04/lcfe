@@ -3,8 +3,17 @@
     console.log("main script online");
 	
     var $window = $(window);
+    
+	$("#register-online-1").hide();
 
-
+    // :: Show about modals on about image hover
+    $("#register-pay-btn").on('click', function (e) {
+		
+        e.preventDefault();
+		$("#register-online").hide();
+		$("#register-online-1").show();
+	});
+	
     // :: Show about modals on about image hover
     $(".abx").on('click', function (e) {
 		

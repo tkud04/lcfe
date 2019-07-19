@@ -17,6 +17,7 @@ Route::get('/', 'MainController@getIndex');
 
 Route::get('about', 'MainController@getAbout');
 Route::get('register', 'MainController@getRegister');
+Route::get('drf', 'MainController@getDownload');
 Route::get('register-farmers', 'MainController@getRegisterFarmers');
 Route::get('services', 'MainController@getServices');
 

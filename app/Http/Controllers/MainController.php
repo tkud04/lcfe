@@ -253,6 +253,21 @@ class MainController extends Controller {
 	 *
 	 * @return Response
 	 */
+	public function getDownload()
+    {
+		$file= public_path(). "/download/account.pdf";
+        $headers = [
+              'Content-Type' => 'application/pdf',
+           ];
+
+        return response()->download($file, 'filename.pdf', $headers);
+    }
+
+    /**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
 	public function getZoho()
     {
         $ret = "1535561942737";
