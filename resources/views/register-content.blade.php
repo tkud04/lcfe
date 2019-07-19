@@ -4,6 +4,7 @@
 		<h2 class="heading mb-lg-5 mb-4">Open an account with us, it's super EASY</h2>
 		<div class="row contact-grids w3-agile-grid">
 			<div id="register-online" class="col-md-12 contact-grid1 w3-agile-grid">
+			  <div class="row">
 			  <div class="col-md-6">
 			    <a href="{{url('drf')}}">Click to download registration form</a><br>
 				<p>Download the form, fill with your details and submit to our head office.</p>
@@ -11,6 +12,7 @@
 			  <div class="col-md-6">
 			    <button id="register-pay-btn">Register online</button><br>
 				<p>Fill your details and proceed to payment.</p>
+			  </div>
 			  </div>
 			</div>
 			<div id="register-online-1" class="col-md-12 contact-grid1 w3-agile-grid">
