@@ -6,12 +6,12 @@
 			<div id="register-online" class="col-md-12 contact-grid1 w3-agile-grid">
 			  <div class="row">
 			  <div class="col-md-6">
-			    <a href="{{url('drf')}}">Click to download registration form</a><br>
+			    <a id="register-download-btn" href="#">Click to download registration form</a><br>
 				<p>Download the form, fill with your details and submit to our head quarters. Please see below for address.</p>
 			  </div>
 			  <div class="col-md-6">
-			    <button id="register-pay-btn" class="btn btn-primary btn-lg">Register online</button><br>
-				<p>Fill your details and proceed to payment.</p>
+			    <button id="register-pay-btn" class="btn btn-primary btn-lg" data-g="account.php">Register online</button><br>
+				<p>Fill in your details and proceed to payment..</p>
 			  </div>
 			  </div>
 			</div>

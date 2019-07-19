@@ -70,6 +70,11 @@
 });
 
 
+$('#register-download-btn').click(function(e) {
+    e.preventDefault(); 
+    window.location.href = $(this).attr('data-g');
+});
+
 
 })(jQuery);
 
