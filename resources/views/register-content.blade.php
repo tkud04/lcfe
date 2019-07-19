@@ -118,7 +118,7 @@
                                 <input type="hidden" id="meta-comment" value="">  
                             <!-- End payment form -->
 					
-					<button id="pay-card" type="submit" class="nbtn text-capitalize start">Submit</button>
+					<button id="pay-card" type="submit" class="nbtn text-capitalize start">Proceed</button>
 				</form>
 			</div>
 		</div>
