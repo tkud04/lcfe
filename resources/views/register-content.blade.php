@@ -7,16 +7,16 @@
 			  <div class="row">
 			  <div class="col-md-6">
 			    <a href="{{url('drf')}}">Click to download registration form</a><br>
-				<p>Download the form, fill with your details and submit to our head office.</p>
+				<p>Download the form, fill with your details and submit to our head quarters. Please see below for address.</p>
 			  </div>
 			  <div class="col-md-6">
-			    <button id="register-pay-btn">Register online</button><br>
+			    <button id="register-pay-btn" class="btn btn-primary btn-lg">Register online</button><br>
 				<p>Fill your details and proceed to payment.</p>
 			  </div>
 			  </div>
 			</div>
 			<div id="register-online-1" class="col-md-12 contact-grid1 w3-agile-grid">
-				<h4>Fill</h4>
+				<h4 class="text-success">Registration fee: &#8358;100,000.00</h4>
 			     <small style="color:red;">All fields are required</small>
 				<form id="register-form" method="post">
 				    {!! csrf_field() !!}
@@ -108,7 +108,7 @@
                              </script>
                             <!-- payment form -->
 							<?php
-                              $total = 50000;							
+                              $total = 100000;							
 							?>
                             	<input type="hidden" id="pem" name="email" value=""> {{-- required --}}
                             	<input type="hidden" name="amount" value="{{$total * 100}}"> {{-- required in kobo --}}
