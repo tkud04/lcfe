@@ -18,7 +18,8 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:500px;overflow:hidden;">
 		   <?php
-			$warehouses = ['images/product-6.jpg','images/product-5.jpg','images/product-7.jpg','images/wh-11.jpg','images/wh-22.jpg','images/wh-33.jpg','images/wh-44.jpg','images/wh-55.jpg'];
+			#$warehouses = ['images/product-6.jpg','images/product-5.jpg','images/product-7.jpg','images/wh-11.jpg','images/wh-22.jpg','images/wh-33.jpg','images/wh-44.jpg','images/wh-55.jpg'];
+			$warehouses = ['images/product-6.jpg','images/warehouse-1.jpg','images/warehouse-2.jpg','images/warehouse-3.jpg','images/warehouse-4.jpg'];
 		     shuffle($warehouses);
 			 foreach($warehouses as $wh){
 		    ?>
