@@ -276,7 +276,7 @@ class MainController extends Controller {
 	 */
 	public function getDownload()
     {
-		$fullPath = public_path('account.pdf');
+		$fullPath = 'account.pdf';
 		
         if($fullPath) {
             $fsize = filesize($fullPath);
