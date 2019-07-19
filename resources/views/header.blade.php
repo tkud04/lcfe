@@ -21,6 +21,9 @@
 						<a class="nav-link" href="{{url('about')}}">About</a>
 					</li>
 					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="{{url('gallery')}}">Gallery</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
 						<a class="nav-link" href="{{url('register')}}">Register</a>
 					</li>
 					<li class="nav-item  mr-lg-3">

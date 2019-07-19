@@ -1,34 +1,46 @@
-<section class="quotes py-5 text-center wow fadeInUp">
+<section class="quotes py-5 text-centerv wow fadeInUp">
     	<div class="container-fluid">
 		<div class="row">
 			<!-- Counter -->
 			<div class="col-lg-6 mb-10">
-				<h3 class="heading mb-lg-5 mb-4">Warehouses</h3>
-				<p>Our warehousing solutions are designed to ensure commodities move from suppliers to vendors to customers without losing quality.</p><br>
-				<p>It's about getting things where they need to be, exactly when they need to be there, and doing it as time and cost efficiently as possible.</p><br>
-				<!-- <p>This is some text to describe the warehousing solutions on display. The text should be easy to understand and fill up this space.</p><br> -->
+				<h3 class="heading mb-lg-5 mb-4">Gallery</h3>
+				<p>A sneak peek into our day to day activities</p><br>
+				<p>Feel free to browse our gallery</p><br>
 			</div>
 			<!-- //Counter -->
-			<!-- Warehouses -->
+			
+			<!-- Gallery -->
 			<div class=" col-lg-6">
-				<div id="warehouses-slider" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:500px;overflow:hidden;visibility:hidden;">
+				<div id="gallery-slider" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="lib/jssor/img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:500px;overflow:hidden;">
-		   <?php
-			#$warehouses = ['images/product-6.jpg','images/product-5.jpg','images/product-7.jpg','images/wh-11.jpg','images/wh-22.jpg','images/wh-33.jpg','images/wh-44.jpg','images/wh-55.jpg'];
-			$warehouses = ['images/product-6.jpg','images/warehouse-1.jpg','images/warehouse-2.jpg','images/warehouse-3.jpg','images/warehouse-4.jpg'];
-		     shuffle($warehouses);
-			 foreach($warehouses as $wh){
-		    ?>
             <div>
-                <img data-u="image" src="<?=$wh?>" />
+                <img data-u="image" src="lib/jssor/img/002.jpg" />
             </div>
-			<?php
-			 }
-			?>
+            <div>
+                <img data-u="image" src="lib/jssor/img/001.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="lib/jssor/img/001_1.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="lib/jssor/img/001_2.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="lib/jssor/img/005.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="lib/jssor/img/001.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="lib/jssor/img/002_1.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="lib/jssor/img/001_2.jpg" />
+            </div>
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb072" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -51,9 +63,10 @@
             </svg>
         </div>
     </div>
-    <script type="text/javascript">jssor_slider_init("warehouses-slider");</script>
+    <script type="text/javascript">jssor_slider_init("gallery-slider");</script>
     <!-- #endregion Jssor Slider End -->
 			</div>
+			
 			<div class="clearfix"> </div>
 			<!-- //Clients -->
 		</div>

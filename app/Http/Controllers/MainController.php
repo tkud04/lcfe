@@ -84,6 +84,27 @@ class MainController extends Controller {
 		
     	return view('register',compact(['user','cart','signals','states']));
     }	
+    
+    /**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getGallery()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		
+    	return view('gallery',compact(['user','cart','signals']));
+    }	
 
 	/**
 	 * Show the application welcome screen to the user.
