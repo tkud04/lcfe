@@ -4,9 +4,9 @@
 			<!-- Counter -->
 			<div class="col-lg-6 mb-10">
 				<h3 class="heading mb-lg-5 mb-4">Warehouses</h3>
-				<p>This is some text to describe the warehousing solutions on display. The text should be easy to understand and fill up this space.</p><br>
-				<p>This is some text to describe the warehousing solutions on display. The text should be easy to understand and fill up this space.</p><br>
-				<p>This is some text to describe the warehousing solutions on display. The text should be easy to understand and fill up this space.</p><br>
+				<p>Our warehousing solutions are designed to ensure commodities move from suppliers to vendors to customers without losing quality.</p><br>
+				<p>It's about getting things where they need to be, exactly when they need to be there, and doing it as time and cost efficiently as possible.</p><br>
+				<!-- <p>This is some text to describe the warehousing solutions on display. The text should be easy to understand and fill up this space.</p><br> -->
 			</div>
 			<!-- //Counter -->
 			<!-- Warehouses -->
