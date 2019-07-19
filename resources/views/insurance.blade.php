@@ -9,30 +9,18 @@
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="lib/jssor/img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:500px;overflow:hidden;">
+            <?php
+			#$warehouses = ['images/product-6.jpg','images/product-5.jpg','images/product-7.jpg','images/wh-11.jpg','images/wh-22.jpg','images/wh-33.jpg','images/wh-44.jpg','images/wh-55.jpg'];
+			$insurance = ['images/insurance-1.png','images/insurance-2.jpg','images/insurance-3.png','images/insurance-4.png'];
+		     shuffle($insurance);
+			 foreach($insurance as $ia){
+		    ?>
             <div>
-                <img data-u="image" src="lib/jssor/img/002.jpg" />
+                <img data-u="image" src="<?=$ia?>" />
             </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/001.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/001_1.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/001_2.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/005.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/001.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/002_1.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="lib/jssor/img/001_2.jpg" />
-            </div>
+			<?php
+			 }
+			?>
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb072" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
