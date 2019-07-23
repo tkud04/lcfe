@@ -171,6 +171,29 @@ class LoginController extends Controller {
 			}
          }        
     }
+    
+    /**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getRegister()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		$states = $this->helpers->states;
+		
+    	return view('register',compact(['user','cart','signals','states']));
+    }	
+    
 	
     public function postRegister(Request $request)
     {
@@ -218,6 +241,75 @@ class LoginController extends Controller {
              return redirect()->intended('/');
           }
     }
+	
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getRegisterFarmers()
+    {
+         $user = null;
+		
+		$cart = [];
+		if(Auth::check())
+		{
+			$user = Auth::user();
+			$cart = $this->helpers->getCart($user);
+		}
+		
+		$signals = $this->helpers->signals;
+		
+    	return view('register-farmers',compact(['user','cart','signals']));
+    }	
+    
+    public function postRegisterFarmers(Request $request)
+    {
+        $req = $request->all();
+        dd($req);
+        
+        $validator = Validator::make($req, [
+                             'pass' => 'required|confirmed',
+                             'email' => 'required|email',                            
+                             'phone' => 'required|numeric',
+                             'fname' => 'required',
+                             'lname' => 'required',
+                             #'g-recaptcha-response' => 'required',
+                           # 'terms' => 'accepted',
+         ]);
+         
+         if($validator->fails())
+         {
+             $messages = $validator->messages();
+             //dd($messages);
+             
+             return redirect()->back()->withInput()->with('errors',$messages);
+         }
+         
+         else
+         {
+            $req['role'] = "user";    
+            $req['status'] = "enabled";           
+            
+                       #dd($req);            
+
+            $user =  $this->helpers->createUser($req); 
+			$req['user_id'] = $user->id;
+            $shippingDetails =  $this->helpers->createShippingDetails($req); 
+            $wallet =  $this->helpers->createWallet($req); 
+            $bank =  $this->helpers->createBankAccount(['user_id' => $user->id,
+                                                       'bank' => '',
+                                                      'acname' => '',                                                     
+                                                      'acnum' => ''
+                                                    ]); 
+                                                    
+             //after creating the user, send back to the registration view with a success message
+             #$this->helpers->sendEmail($user->email,'Welcome To Disenado!',['name' => $user->fname, 'id' => $user->id],'emails.welcome','view');
+             session()->flash("signup-status", "success");
+             return redirect()->intended('/');
+          }
+    }
+	
 	
 	
 	public function getForgotUsername()

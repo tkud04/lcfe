@@ -63,28 +63,7 @@ class MainController extends Controller {
 		//return redirect()->intended('/');
     }	
 
-	/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getRegister()
-    {
-         $user = null;
-		
-		$cart = [];
-		if(Auth::check())
-		{
-			$user = Auth::user();
-			$cart = $this->helpers->getCart($user);
-		}
-		
-		$signals = $this->helpers->signals;
-		$states = $this->helpers->states;
-		
-    	return view('register',compact(['user','cart','signals','states']));
-    }	
-    
+	
     /**
 	 * Show the application welcome screen to the user.
 	 *
@@ -127,27 +106,7 @@ class MainController extends Controller {
     	return view('paid',compact(['user','cart','signals']));
     }	
 
-	/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getRegisterFarmers()
-    {
-         $user = null;
-		
-		$cart = [];
-		if(Auth::check())
-		{
-			$user = Auth::user();
-			$cart = $this->helpers->getCart($user);
-		}
-		
-		$signals = $this->helpers->signals;
-		
-    	return view('register-farmers',compact(['user','cart','signals']));
-    }	
-	
+
 	/**
 	 * Show the application welcome screen to the user.
 	 *
