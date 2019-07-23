@@ -20,23 +20,7 @@ class LoginController extends Controller {
     	$this->helpers = $h;            
     }
 	
-		/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getRegister()
-    {
-       $user = null;
 		
-		if(Auth::check())
-		{
-			$user = Auth::user();
-			return redirect()->intended('/');
-		}
-		
-    	return view('register',compact(['user']));
-    }
     
     /**
 	 * Show the application welcome screen to the user.
