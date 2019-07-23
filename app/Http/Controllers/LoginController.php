@@ -243,8 +243,9 @@ class LoginController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$states = $this->helpers->states;
 		
-    	return view('register-farmers',compact(['user','cart','signals']));
+    	return view('register-farmers',compact(['user','cart','signals','states']));
     }	
     
     public function postRegisterFarmers(Request $request)
