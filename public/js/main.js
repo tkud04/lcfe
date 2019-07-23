@@ -82,6 +82,30 @@ $('#register-download-btn').click(function(e) {
 	$(this).click();
 });
 
+$("#farmer-card").click(function(e){
+	e.preventDefault();
+	let em = $('#em').val();
+	let fname = $('#fname').val();
+	let lname = $('#lname').val();
+	let address = $('#address').val();
+	let city = $('#city').val();
+	let state = $('#state').val();
+	let phone = $('#phone').val();
+	
+	if(em === "" || fname === "" || lname === "" || address === "" || city === "" || state === "" || phone === ""){
+		if(em === "") alert("Your email address is required");
+		if(fname === "") alert("Your first name is required");
+		if(lname === "") alert("Your last name is required");
+		if(address === "") alert("Your residential address is required");
+		if(city === "") alert("Your city of residence is required");
+		if(state === "") alert("Your state of residence is required");
+		if(phone === "") alert("Your phone number is required");
+    }
+	else{ 
+	 $('#farmer-register-form').submit();
+	}
+});
+
 
 })(jQuery);
 
