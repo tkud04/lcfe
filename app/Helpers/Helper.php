@@ -218,6 +218,14 @@ $subject = $data['subject'];
 				 #dd($rett);
 				 return $rett;
 		   }
+		
+		   function getStockChunks()
+		   {
+			  $ret = [];
+			  $stocks = $this->getStocks();
+		      $ret = array_chunk($stocks,8);
+			  return $ret;
+		   }
 		   
 		    function checkout($user, $data, $type)
            {
