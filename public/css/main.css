@@ -30,3 +30,12 @@
 .nbtn.start:hover{
     background: #dc3545;
 }
+
+/** Stocks banner title **/
+.stocks-title{
+	margin: 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #0f0;
+    line-height: 26px;
+}
