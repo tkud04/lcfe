@@ -1,7 +1,7 @@
 <!-- about -->
 <section class="about py-5">
 	<div class="container py-md-3 agile-info wow fadeInUp">
-		<h2 class="heading mb-md-5 mb-4">About Us</h2>
+		<!--<h2 class="heading mb-md-5 mb-4">About Us</h2> -->
 		<div class="row about-grids agile-info">
 			<div class="col-lg-6 w3-agile-grid mb-lg-0 mb-5">
 				<p>We at Lagos commodities & Futures Exchange Limited seek to provide topnotch services to our clients 
@@ -14,8 +14,8 @@
 				<h3 class="black wow fadeInRight">Commodities Trade</h3>
 			</div>
 			<div class="col-lg-3 w3-agile-grid col-md-4 mt-md-0 mt-4">
-				<h3 class="margin green wow fadeInLeft">Futures Exchange</h3>
-				<h3 class="grey wow fadeInRight">Fast Delivery <br/><br/></h3>
+				<h3 class="margin green wow fadeInRight">Futures Exchange</h3>
+				<h3 class="grey wow fadeInLeft">Fast Delivery <br/><br/></h3>
 			</div>
 		</div>
 	</div>
