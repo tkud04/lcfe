@@ -42,6 +42,7 @@
 </section>
 <!-- //send message-->
 @yield("banner")
+@include("stocks-banner")
 @yield("content")         
 
 
