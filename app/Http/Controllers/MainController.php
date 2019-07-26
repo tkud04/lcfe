@@ -35,8 +35,7 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
-		$stocks = $this->helpers->getStocks();
-		$stockChunks = array_chunk($stocks,8);
+		$stocks = $this->helpers->getStockChunks();
     	return view('index',compact(['user','cart','signals','stockChunks']));
     }
 
@@ -57,9 +56,10 @@ class MainController extends Controller {
 		}
 
 		$signals = $this->helpers->signals;
+		$stocks = $this->helpers->getStockChunks();
 		$bios = $this->helpers->bios;
 		$leadership = $this->helpers->leadership;
-    	return view('about',compact(['user','cart','signals','bios','leadership']));
+    	return view('about',compact(['user','cart','signals','stocks','bios','leadership']));
 		//return redirect()->intended('/');
     }	
 
@@ -81,8 +81,9 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$stocks = $this->helpers->getStockChunks();
 		
-    	return view('gallery',compact(['user','cart','signals']));
+    	return view('gallery',compact(['user','cart','signals','stocks']));
     }	
 
 	/**
@@ -102,8 +103,9 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$stocks = $this->helpers->getStockChunks();
 		
-    	return view('paid',compact(['user','cart','signals']));
+    	return view('paid',compact(['user','cart','signals','stocks']));
     }	
 
 
@@ -124,8 +126,9 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$stocks = $this->helpers->getStockChunks();
 		
-    	return view('services',compact(['user','cart','signals']));
+    	return view('services',compact(['user','cart','signals','stocks']));
     }
 
 	/**
@@ -145,8 +148,9 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$stocks = $this->helpers->getStockChunks();
 		
-    	return view('mission',compact(['user','cart','signals']));
+    	return view('mission',compact(['user','cart','signals','stocks']));
     }
 
 	/**
@@ -166,8 +170,9 @@ class MainController extends Controller {
 		}
 		
 		$signals = $this->helpers->signals;
+		$stocks = $this->helpers->getStockChunks();
 		
-    	return view('contact',compact(['user','cart','signals']));
+    	return view('contact',compact(['user','cart','signals','stocks']));
     }
 		/**
 	 * Show the application welcome screen to the user.
