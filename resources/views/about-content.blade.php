@@ -10,12 +10,12 @@
 					</p>
 			</div>
 			<div class="col-lg-3 w3-agile-grid col-md-4 pr-md-0">
-				<h3 class="margin">4+ years experience</h3>
-				<h3 class="black">Commodities Trade</h3>
+				<h3 class="margin wow fadeInLeft">4+ years experience</h3>
+				<h3 class="black wow fadeInRight">Commodities Trade</h3>
 			</div>
 			<div class="col-lg-3 w3-agile-grid col-md-4 mt-md-0 mt-4">
-				<h3 class="margin green">Futures Exchange</h3>
-				<h3 class="grey">Fast Delivery <br/><br/></h3>
+				<h3 class="margin green wow fadeInLeft">Futures Exchange</h3>
+				<h3 class="grey wow fadeInRight">Fast Delivery <br/><br/></h3>
 			</div>
 		</div>
 	</div>

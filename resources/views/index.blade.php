@@ -8,8 +8,7 @@
 @stop
 
 @section('content')
-@include("stocks-banner")
-@include("ad-5")
+@include("ad-3")
 @include("affiliations")
 @include("ad-2")
 @include("warehouses")

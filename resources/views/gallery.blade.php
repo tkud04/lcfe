@@ -63,7 +63,7 @@
             </svg>
         </div>
     </div>
-    <script type="text/javascript">jssor_slider_init("gallery-slider");</script>
+    <script type="text/javascript">jssor_gallery_slider_init("gallery-slider");</script>
     <!-- #endregion Jssor Slider End -->
 			</div>
 			
