@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title',"Get Started")
+@section('title',"Mission / Vision")
 
 @section('banner')
 <?php $bannerTitle = "Mission / Vision"; ?>
