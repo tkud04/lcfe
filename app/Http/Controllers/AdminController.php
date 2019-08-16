@@ -91,6 +91,30 @@ class AdminController extends Controller {
     	return view('admin.members',compact(['user']));
     }
 
+/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getMember()
+    {
+       $user = null;
+		
+		/*if(Auth::check())
+		{
+			$user = Auth::user();
+            if(!$this->helpers->isAdmin($user)) return redirect()->intended('dashboard');		
+		}
+		else
+        {
+        	return redirect()->intended('admin?return=cobra');
+        }
+		*/
+        
+		
+    	return view('admin.member',compact(['user']));
+    }
+
 	
 	
 	
