@@ -33,3 +33,7 @@ Route::get('payment/callback', 'PaymentController@getPaymentCallback');
 Route::post('pay', 'PaymentController@postRedirectToGateway');
 
 Route::get('paid', 'MainController@getPaid');
+
+/**Admin routes **/
+Route::get('admin', 'AdminController@getIndex');
+
