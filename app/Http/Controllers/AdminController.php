@@ -28,7 +28,7 @@ class AdminController extends Controller {
     {
        $user = null;
 		
-		if(Auth::check())
+		/*if(Auth::check())
 		{
 			$user = Auth::user();
             if(!$this->helpers->isAdmin($user)) return redirect()->intended('dashboard');		
@@ -37,16 +37,10 @@ class AdminController extends Controller {
         {
         	return redirect()->intended('admin?return=cobra');
         }
+		*/
         
-		$c = $this->helpers->categories;
-		$signals = $this->helpers->signals;
-		$transactions = $this->helpers->adminGetTransactions();
-		$deals = $this->helpers->adminGetDeals();
-		$auctions = $this->helpers->adminGetAuctions();
-		$adminStats = $this->helpers->adminGetStats();
-		$adminRecentOrders = $this->helpers->adminGetOrders();
-		$adminRecentTransactions = $this->helpers->adminGetTransactions();
-    	return view('admin.index',compact(['user','c','signals','transactions','deals','auctions','adminStats','adminRecentOrders','adminRecentTransactions']));
+		
+    	return view('admin.index',compact(['user']));
     }
 
 	/**
