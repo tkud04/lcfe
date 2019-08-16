@@ -192,7 +192,7 @@
 
 		$(function(){
 
-			SyntaxHighlighter.all();
+			//SyntaxHighlighter.all();
 
 				});
 
