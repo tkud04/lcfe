@@ -215,6 +215,9 @@
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
+<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
 	
 	<script type="text/javascript">
     	$(document).ready(function(){
