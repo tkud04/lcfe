@@ -1,14 +1,14 @@
 @extends('admin.layout')
 
-@section('title',"Dashboard")
+@section('title',"Surveys")
 
 @section('content')
 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Striped Table with Hover</h4>
-                                <p class="category">Here is a subtitle for this table</p>
+                                <h4 class="title">Surveys</h4>
+                                <p class="category">A list of all surveys on the platform</p>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
