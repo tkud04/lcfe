@@ -10,7 +10,7 @@
 @section('content')
 @include("resource-center")
 @include("affiliations")
-@include("ad-2")
+@include("lib")
 @include("warehouses")
 @include("insurance")
 @include("ad-3")
