@@ -36,4 +36,6 @@ Route::get('paid', 'MainController@getPaid');
 
 /**Admin routes **/
 Route::get('admin', 'AdminController@getIndex');
+Route::get('admin-surveys', 'AdminController@getSurveys');
+Route::get('admin-members', 'AdminController@getMembers');
 

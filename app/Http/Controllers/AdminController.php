@@ -48,6 +48,58 @@ class AdminController extends Controller {
 	 *
 	 * @return Response
 	 */
+	public function getSurveys()
+    {
+       $user = null;
+		
+		/*if(Auth::check())
+		{
+			$user = Auth::user();
+            if(!$this->helpers->isAdmin($user)) return redirect()->intended('dashboard');		
+		}
+		else
+        {
+        	return redirect()->intended('admin?return=cobra');
+        }
+		*/
+        
+		
+    	return view('admin.surveys',compact(['user']));
+    }
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getMembers()
+    {
+       $user = null;
+		
+		/*if(Auth::check())
+		{
+			$user = Auth::user();
+            if(!$this->helpers->isAdmin($user)) return redirect()->intended('dashboard');		
+		}
+		else
+        {
+        	return redirect()->intended('admin?return=cobra');
+        }
+		*/
+        
+		
+    	return view('admin.members',compact(['user']));
+    }
+
+	
+	
+	
+	
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
 	public function getUsers()
     {
        $user = null;
