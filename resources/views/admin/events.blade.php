@@ -1,22 +1,22 @@
 @extends('admin.layout')
 
-@section('title',"Surveys")
+@section('title',"Events")
 
 @section('content')
 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Surveys</h4>
-								<a class="btn btn-info btn-fill" href="#">Add Survey</a>
-                                <p class="category">A list of all surveys on the platform</p>
+                                <h4 class="title">Events</h4>
+								<a class="btn btn-info btn-fill" href="#">Add Event</a>
+                                <p class="category">A list of all events on the platform</p>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
                                     <thead>
                                         <th>ID</th>
-                                    	<th>Title</th>
-                                    	<th>Total filled</th>
+                                    	<th>Event</th>
+                                    	<th>Date</th>
                                     	<th>Status</th>
                                     	<th>Actions</th>
                                     </thead>

@@ -39,4 +39,5 @@ Route::get('admin', 'AdminController@getIndex');
 Route::get('admin-surveys', 'AdminController@getSurveys');
 Route::get('admin-members', 'AdminController@getMembers');
 Route::get('admin-member', 'AdminController@getMember');
+Route::get('admin-events', 'AdminController@getMember');
 

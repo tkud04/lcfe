@@ -92,7 +92,7 @@
                             <div class="content">
                                 <div class="author">
                                      <a href="#">
-                                    <img class="avatar border-gray" src="assets/img/faces/face-3.jpg" alt="..."/>
+                                    <img class="avatar border-gray" src="assets/img/tim_80x80.png" alt="..."/>
 
                                       <h4 class="title">Tasks<br />
                                         

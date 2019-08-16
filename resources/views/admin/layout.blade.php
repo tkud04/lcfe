@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{url('admin-users')}}">
+                    <a href="{{url('admin-members')}}">
                         <i class="pe-7s-user"></i>
                         <p>Members</p>
                     </a>
