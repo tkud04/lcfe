@@ -70,7 +70,7 @@
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" /><!-- for testimonials -->
 
 	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all" /><!-- for wow animations -->
-	
+		<script src="js/helper.js"></script>
 
     @yield("styles")
 
