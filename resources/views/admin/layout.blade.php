@@ -66,13 +66,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{url('admin-blogs')}}">
+                    <a href="{{url('admin')}}">
                         <i class="pe-7s-news-paper"></i>
                         <p>Blogs</p>
                     </a>
                 </li>
                 <li>
-                    <a href="{{url('admin-ads')}}">
+                    <a href="{{url('admin')}}">
                         <i class="pe-7s-science"></i>
                         <p>Advertisements</p>
                     </a>
